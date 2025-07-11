@@ -54,7 +54,7 @@ body {
 }
 
 .header h1 i {
-    color: #1A4D9F; /* Adjusted to logo colors */
+    color: #1A4D9F;
 }
 
 .header-stats {
@@ -65,11 +65,11 @@ body {
 .stat-item {
     text-align: center;
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #1A4D9F, #0A2240); /* Adjusted to logo colors */
+    background: linear-gradient(135deg, #1A4D9F, #0A2240);
     border-radius: 12px;
     color: white;
     min-width: 120px;
-    box-shadow: 0 4px 15px rgba(26, 77, 159, 0.3); /* Adjusted to logo colors */
+    box-shadow: 0 4px 15px rgba(26, 77, 159, 0.3);
 }
 
 .stat-value {
@@ -131,12 +131,12 @@ body {
 
 .filter-select:focus {
     outline: none;
-    border-color: #1A4D9F; /* Adjusted to logo colors */
-    box-shadow: 0 0 0 3px rgba(26, 77, 159, 0.1); /* Adjusted to logo colors */
+    border-color: #1A4D9F;
+    box-shadow: 0 0 0 3px rgba(26, 77, 159, 0.1);
 }
 
 .refresh-btn {
-    background: linear-gradient(135deg, #1A4D9F, #0A2240); /* Adjusted to logo colors */
+    background: linear-gradient(135deg, #1A4D9F, #0A2240);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -152,7 +152,7 @@ body {
 
 .refresh-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(26, 77, 159, 0.3); /* Adjusted to logo colors */
+    box-shadow: 0 8px 25px rgba(26, 77, 159, 0.3);
 }
 
 /* Charts Grid */
@@ -200,7 +200,7 @@ body {
 }
 
 .chart-header h3 i {
-    color: #1A4D9F; /* Adjusted to logo colors */
+    color: #1A4D9F;
 }
 
 .chart-actions {
@@ -220,9 +220,9 @@ body {
 
 .chart-btn:hover,
 .chart-btn.active {
-    background: #1A4D9F; /* Adjusted to logo colors */
+    background: #1A4D9F;
     color: white;
-    border-color: #1A4D9F; /* Adjusted to logo colors */
+    border-color: #1A4D9F;
 }
 
 .chart-container {
@@ -262,11 +262,11 @@ body {
 }
 
 .table-header h3 i {
-    color: #1A4D9F; /* Adjusted to logo colors */
+    color: #1A4D9F;
 }
 
 .export-btn {
-    background: linear-gradient(135deg, #27B399, #1E5F6B); /* Adjusted to logo colors */
+    background: linear-gradient(135deg, #27B399, #1E5F6B);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -281,7 +281,7 @@ body {
 
 .export-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(39, 179, 153, 0.3); /* Adjusted to logo colors */
+    box-shadow: 0 8px 25px rgba(39, 179, 153, 0.3);
 }
 
 .table-container {
@@ -314,7 +314,7 @@ body {
 }
 
 .data-table tbody tr:hover {
-    background: rgba(26, 77, 159, 0.05); /* Adjusted to logo colors */
+    background: rgba(26, 77, 159, 0.05);
 }
 
 /* Footer */
@@ -403,7 +403,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(26, 77, 159, 0.1), transparent); /* Adjusted to logo colors */
+    background: linear-gradient(90deg, transparent, rgba(26, 77, 159, 0.1), transparent);
     animation: loading 1.5s infinite;
 }
 
@@ -428,10 +428,151 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #1A4D9F, #0A2240); /* Adjusted to logo colors */
+    background: linear-gradient(135deg, #1A4D9F, #0A2240);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, #153E80, #081C33); /* Adjusted to logo colors */
+    background: linear-gradient(135deg, #153E80, #081C33);
+}
+
+/* Estilos para a tela de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: 
+        linear-gradient(135deg, rgba(26, 77, 159, 0.85) 0%, rgba(10, 34, 64, 0.85) 100%),
+        url('v8.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    padding: 2rem;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-logo {
+    margin-bottom: 1.5rem;
+    max-width: 150px;
+}
+
+.login-header h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-group input {
+    padding: 0.75rem 1rem;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    background: white;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #1A4D9F;
+    box-shadow: 0 0 0 3px rgba(26, 77, 159, 0.1);
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #1A4D9F, #0A2240);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(26, 77, 159, 0.3);
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.login-footer a {
+    color: #1A4D9F;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+.logout-btn {
+    background: linear-gradient(135deg, #f5576c, #f093fb);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.logout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(245, 87, 108, 0.3);
 }

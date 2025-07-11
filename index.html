@@ -9,7 +9,35 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="dashboard-container">
+    <!-- Tela de Login -->
+    <div id="login-container" class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <img src="https://via.placeholder.com/150x50?text=V8.TECH" alt="Logo V8.TECH" class="login-logo">
+                <h2>Acesso ao Dashboard</h2>
+                <p>Por favor, insira suas credenciais</p>
+            </div>
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="username"><i class="fas fa-user"></i> Usuário</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Entrar
+                </button>
+            </form>
+            <div class="login-footer">
+                <p>Problemas para acessar? <a href="#">Contate o administrador</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard (inicialmente oculto) -->
+    <div class="dashboard-container" style="display: none;">
         <!-- Header -->
         <header class="header">
             <div class="header-content">
@@ -28,6 +56,9 @@
                         <span class="stat-label">Requisições</span>
                     </div>
                 </div>
+                <button id="logout-btn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </button>
             </div>
         </header>
 
@@ -153,4 +184,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
