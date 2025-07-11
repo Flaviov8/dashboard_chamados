@@ -2,7 +2,7 @@
 const AuthModule = (() => {
     // Dados de usuários válidos (em produção, substituir por chamada API)
     const validUsers = [
-        { username: "admin", password: "admin123", name: "Administrador" },
+        { username: "admin", password: "9K4SucuAEk&@4NSdjY", name: "Administrador" },
         { username: "user", password: "user123", name: "Usuário Padrão" }
     ];
 
